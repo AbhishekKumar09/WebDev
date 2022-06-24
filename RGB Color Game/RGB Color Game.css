@@ -1,0 +1,76 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family:'Montserrat', sans-serif;  /* copied*/
+}
+
+.square{
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;  /*makes the space*/
+	float : left;       /* use in the image gallery also make all things in sequence*/
+	margin: 1.66%;  /*makes the space between the squares*/
+	border-radius: 15%;
+	transition: background 0.6s; /* IMPORTANT - here transition means giving an fade effect for some time here we had given for 0.3s aslo we had appplied it to background only*/ 
+	-webkit-transistion: background 0.6s ; /*used for browser friendly*/
+	-moz-transistion: background 0.6s ; /*used for browser friendly*/
+
+}
+
+#container{
+
+	margin: 20px auto; /* means top and bottom = 20px , left and right = auto*/
+	max-width: 600px;
+}
+
+h1{
+	text-align: center;
+	line-height: 1.1;  /* space between the lines*/
+	color: white;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0 ;   /* padding top and bottom = 20px and left and right = 0 px*/
+}
+
+#colorDisplay{
+	font-size: 200%;
+}
+
+#stripe{
+	background-color: white;
+	height : 30px ;
+	text-align: center;
+	color: black;
+}
+
+#message{
+	display: inline-block;
+	width: 15%;         /* space made by the span tag*/
+}
+
+.selected{
+	color: white;
+	background: steelblue; 
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit; /* itself adjust*/
+	transition: all 0.3s; /* IMPORTANT - here transition means giving an fade effect for some time here we had given for 0.3s aslo we had appplied it to all*/ 
+	-webkit-transistion:all 0.3s ; /*used for browser friendly*/
+	-moz-transistion: all 0.3s ; /*used for browser friendly*/
+	outline: none; /* remove the annoying outline on buttons*/
+}
+
+button:hover{
+	color: white;
+	background: steelblue;
+}
